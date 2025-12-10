@@ -270,49 +270,77 @@ export default function SobreNosotros() {
           </FadeIn>
 
           <StaggerContainer
-            className="grid grid-cols-1 md:grid-cols-4 gap-10"
-            staggerDelay={0.2}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            staggerDelay={0.15}
           >
             {teamMembers.map((member, index) => (
               <StaggerItem key={member.id}>
                 <motion.div
-                  whileHover={{ y: -15 }}
-                  transition={{ duration: 0.4 }}
+                  whileHover={{ y: -12 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
                   className="h-full"
                 >
                   <SpotlightCard
                     mode="after"
-                    from="rgba(217,119,6,0.25)"
+                    from="rgba(217,119,6,0.2)"
                     size={400}
-                    className="group h-full rounded-2xl border border-amber-200/50 bg-white shadow-lg p-6"
+                    className="group h-full rounded-2xl border border-amber-200/50 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8"
                   >
-                    <div className="relative z-10 text-center">
+                    <div className="relative z-10 flex flex-col items-center text-center">
+                      {/* Avatar Container with proper animation */}
                       <motion.div
-                        className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg"
+                        className="relative mb-6"
                         initial={{ scale: 0, rotate: -180 }}
                         whileInView={{ scale: 1, rotate: 0 }}
                         transition={{
                           delay: index * 0.1,
                           type: "spring",
-                          stiffness: 200,
+                          stiffness: 150,
+                          damping: 12,
                         }}
                         viewport={{ once: true }}
-                        whileHover={{ rotate: 360, scale: 1.1 }}
+                        whileHover={{ scale: 1.08 }}
                       >
-                        <img
-                          src={member.img}
-                          className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg"
+                        {/* Glow effect on hover */}
+                        <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full opacity-0 group-hover:opacity-75 blur-lg transition-opacity duration-500"></div>
+                        
+                        {/* Avatar image */}
+                        <div className="relative w-28 h-28 rounded-full overflow-hidden ring-4 ring-white shadow-xl group-hover:ring-amber-400 transition-all duration-300">
+                          <img
+                            src={member.img}
+                            alt={`Foto de ${member.name}, ${member.role} de Moonlight Coffee`}
+                            className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
+                            loading="lazy"
+                          />
+                        </div>
+
+                        {/* Decorative ring animation */}
+                        <motion.div
+                          className="absolute inset-0 rounded-full border-2 border-amber-400/30"
+                          animate={{
+                            scale: [1, 1.15, 1],
+                            opacity: [0.5, 0, 0.5],
+                          }}
+                          transition={{
+                            duration: 2.5,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                          }}
                         />
                       </motion.div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                        {member.name}
-                      </h3>
-                      <div className="text-amber-700 font-semibold mb-4">
-                        {member.role}
+
+                      {/* Content */}
+                      <div className="space-y-3">
+                        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-300">
+                          {member.name}
+                        </h3>
+                        <div className="inline-block px-4 py-1 bg-amber-100 text-amber-800 font-semibold text-sm rounded-full">
+                          {member.role}
+                        </div>
+                        <p className="text-gray-600 text-sm leading-relaxed pt-2">
+                          {member.bio}
+                        </p>
                       </div>
-                      <p className="text-gray-600 text-base leading-relaxed">
-                        {member.bio}
-                      </p>
                     </div>
                   </SpotlightCard>
                 </motion.div>
