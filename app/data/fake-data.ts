@@ -156,7 +156,7 @@ export const teamMembers = [
   },
   {
     id: 2,
-    img: "/yasmina.jpeg",
+    img: "/yas.jpeg",
     name: "Yasmina Sahli",
     role: "Fundadora",
     bio: "Especialista en café de especialidad y barista certificada. Su pasión por el café artesanal define la calidad de cada taza que servimos.",
