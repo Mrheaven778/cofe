@@ -33,10 +33,10 @@ export function Navbar() {
               height={50}
               width={100}
               src="/logo.jpeg"
-              alt="Moonlight Coffee Logo"
+              alt="Moonlight Coffeee Logo"
             />
             {/* <span className="text-2xl font-bold text-gray-900"> */}
-            {/*   Moonlight Coffe */}
+            {/*   Moonlight Coffee */}
             {/* </span> */}
           </Link>
 

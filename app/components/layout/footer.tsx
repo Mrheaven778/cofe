@@ -14,7 +14,7 @@ export function Footer() {
                   height={50}
                   width={100}
                   src="/logo.png"
-                  alt="Moonlight Coffee Logo"
+                  alt="Moonlight Coffeee Logo"
                 />
               </div>
             </div>
@@ -120,7 +120,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400 flex justify-center items-center gap-4 flex-col">
           <p>
-            &copy; {new Date().getFullYear()} Moonlight Coffe. Todos los
+            &copy; {new Date().getFullYear()} Moonlight Coffee. Todos los
             derechos reservados.
           </p>
 
@@ -130,7 +130,7 @@ export function Footer() {
               height={50}
               width={80}
               src="/dev.png"
-              alt="Moonlight Coffee Logo"
+              alt="Moonlight Coffeee Logo"
             />
           </div>
         </div>

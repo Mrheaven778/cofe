@@ -20,11 +20,11 @@ import { motion } from "framer-motion";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Sobre Nosotros - Moonlight Coffe" },
+    { title: "Sobre Nosotros - Moonlight Coffee" },
     {
       name: "description",
       content:
-        "Conoce la historia de Moonlight Coffe, nuestro equipo y lo que nos hace especiales.",
+        "Conoce la historia de Moonlight Coffee, nuestro equipo y lo que nos hace especiales.",
     },
   ];
 }
@@ -69,7 +69,7 @@ export default function SobreNosotros() {
             <FadeIn direction="left">
               <div>
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                  ¿Cómo Nació Moonlight Coffe?
+                  ¿Cómo Nació Moonlight Coffee?
                 </h2>
                 <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                   <p>
@@ -86,11 +86,11 @@ export default function SobreNosotros() {
                     café excepcional.
                   </p>
                   <p>
-                    Con el tiempo, Moonlight Coffe se convirtió en mucho más que
-                    una cafetería. Se transformó en un punto de encuentro para
-                    escritores, estudiantes, profesores y amantes de la cultura.
-                    Hoy, nos enorgullece ser un espacio donde nacen ideas, se
-                    forman amistades y se viven historias.
+                    Con el tiempo, Moonlight Coffee se convirtió en mucho más
+                    que una cafetería. Se transformó en un punto de encuentro
+                    para escritores, estudiantes, profesores y amantes de la
+                    cultura. Hoy, nos enorgullece ser un espacio donde nacen
+                    ideas, se forman amistades y se viven historias.
                   </p>
                   <p>
                     Cada taza que servimos y cada libro que recomendamos llevan
@@ -128,22 +128,22 @@ export default function SobreNosotros() {
                 </SpotlightCard>
 
                 {/* Badge fuera del SpotlightCard */}
-                <motion.div
-                  className="absolute -bottom-6 -left-6 bg-gradient-to-br from-amber-600 to-amber-700 text-white p-6 rounded-xl shadow-2xl border-4 border-white z-10"
-                  initial={{ opacity: 0, x: -50, scale: 0.8 }}
-                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                  transition={{
-                    delay: 0.5,
-                    duration: 0.6,
-                    type: "spring",
-                    stiffness: 200,
-                  }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                >
-                  <div className="text-5xl font-bold">5+</div>
-                  <div className="text-sm font-semibold">Años de Historia</div>
-                </motion.div>
+                {/* <motion.div */}
+                {/*   className="absolute -bottom-6 -left-6 bg-gradient-to-br from-amber-600 to-amber-700 text-white p-6 rounded-xl shadow-2xl border-4 border-white z-10" */}
+                {/*   initial={{ opacity: 0, x: -50, scale: 0.8 }} */}
+                {/*   whileInView={{ opacity: 1, x: 0, scale: 1 }} */}
+                {/*   transition={{ */}
+                {/*     delay: 0.5, */}
+                {/*     duration: 0.6, */}
+                {/*     type: "spring", */}
+                {/*     stiffness: 200, */}
+                {/*   }} */}
+                {/*   viewport={{ once: true }} */}
+                {/*   whileHover={{ scale: 1.1, rotate: 5 }} */}
+                {/* > */}
+                {/*   <div className="text-5xl font-bold">5+</div> */}
+                {/*   <div className="text-sm font-semibold">Años de Historia</div> */}
+                {/* </motion.div> */}
               </div>
             </FadeIn>
           </div>
@@ -288,7 +288,7 @@ export default function SobreNosotros() {
                   >
                     <div className="relative z-10 text-center">
                       <motion.div
-                        className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg"
+                        className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg"
                         initial={{ scale: 0, rotate: -180 }}
                         whileInView={{ scale: 1, rotate: 0 }}
                         transition={{
@@ -299,7 +299,7 @@ export default function SobreNosotros() {
                         viewport={{ once: true }}
                         whileHover={{ rotate: 360, scale: 1.1 }}
                       >
-                        {member.name.charAt(0)}
+                        {member.img}
                       </motion.div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">
                         {member.name}

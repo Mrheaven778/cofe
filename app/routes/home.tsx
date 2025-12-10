@@ -28,7 +28,7 @@ export function meta({}: Route.MetaArgs) {
   return [
     {
       title:
-        "Moonlight Coffe - Un lugar donde el café se encuentra con las historias",
+        "Moonlight Coffee - Un lugar donde el café se encuentra con las historias",
     },
     {
       name: "description",
@@ -59,7 +59,7 @@ export default function Home() {
         <Container className="relative z-10">
           <FadeIn direction="up" delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
-              Moonlight Coffe
+              Moonlight Coffee
             </h1>
           </FadeIn>
           <FadeIn direction="up" delay={0.4}>
