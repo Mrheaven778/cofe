@@ -233,7 +233,7 @@ export default function Home() {
                     <CardHeader>
                       <CardTitle className="text-xl">{item.name}</CardTitle>
                       <div className="text-2xl font-bold text-amber-700 mt-2">
-                        ${item.price.toFixed(2)}
+                        {item.price.toFixed(2)} €
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -294,7 +294,7 @@ export default function Home() {
                         por {book.author}
                       </div>
                       <div className="text-xl font-bold text-green-700">
-                        ${book.price.toFixed(2)}
+                        {book.price.toFixed(2)} €
                       </div>
                     </CardHeader>
                     <CardContent>

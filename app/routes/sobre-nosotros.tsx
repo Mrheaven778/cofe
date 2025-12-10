@@ -299,7 +299,7 @@ export default function SobreNosotros() {
                         viewport={{ once: true }}
                         whileHover={{ rotate: 360, scale: 1.1 }}
                       >
-                        {member.img}
+                        <img src={member.img} />
                       </motion.div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">
                         {member.name}
