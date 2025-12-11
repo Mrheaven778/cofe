@@ -78,12 +78,21 @@ export default function SobreNosotros() {
                     especialidad y la literatura.
                   </p>
                   <p>
-                    En un pequeño local de la en un pequeño local del Ensanche,
-                    en el corazón de Alcalá de Henares, abrimos nuestras puertas
-                    por primera vez. La idea era simple pero poderosa: ofrecer
-                    un refugio donde las personas pudieran desconectar del mundo
-                    exterior, sumergirse en una buena lectura y disfrutar de un
-                    café excepcional.
+                    Todo comenzó hace unos meses cuando soñábamos con crear un
+                    espacio que uniera nuestras dos grandes pasiones: el café de
+                    especialidad y la buena literatura. Nuestro sueño se hace
+                    realidad en un pequeño local del barrio del ensanche de
+                    Alcalá de Henares. Nuestra idea, simple pero poderosa:
+                    ofrecer un refugio donde las personas puedan desconectar del
+                    mundo exterior y sumergirse en una buena lectura mientras
+                    disfrutan de un café excepcional. Moonlight Coffee es mucho
+                    mas que una cafetería, es un punto de encuentro para
+                    escritores, estudiantes, profesores y amantes de la cultura.
+                    Estamos orgullosas de crear un espacio donde nacen las
+                    ideas, se forman amistades y se viven historias. Cada taza
+                    que servimos y cada libro que recomendamos son, en esencia,
+                    nuestro compromiso con la calidad y la pasión por crear
+                    nuevas experiencias.{" "}
                   </p>
                   <p>
                     Con el tiempo, Moonlight Coffee se convirtió en mucho más
@@ -303,7 +312,7 @@ export default function SobreNosotros() {
                       >
                         {/* Glow effect on hover */}
                         <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full opacity-0 group-hover:opacity-75 blur-lg transition-opacity duration-500"></div>
-                        
+
                         {/* Avatar image */}
                         <div className="relative w-28 h-28 rounded-full overflow-hidden ring-4 ring-white shadow-xl group-hover:ring-amber-400 transition-all duration-300">
                           <img
